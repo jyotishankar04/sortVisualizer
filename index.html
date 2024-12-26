@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualization</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Sorting Algorithms Visualization</h1>
+      </nav>
+    </header>
+
+    <main>
+      <section class="input-section">
+        <input class="inputBox" type="number" placeholder="Enter a number" />
+        <button type="button" class="primary-button submitBtn">
+          Add to array
+        </button>
+      </section>
+
+      <section class="array-section">
+        <h4>Original Array</h4>
+        <div class="original-array"></div>
+      </section>
+
+      <section class="controls-section">
+        <button class="secondary-button sortBtn" data-sort="quick">
+          Sort with Quick Sort
+        </button>
+        <button class="secondary-button sortBtn" data-sort="merge">
+          Sort with Merge Sort
+        </button>
+        <button class="secondary-button sortBtn" data-sort="bubble">
+          Sort with Bubble Sort
+        </button>
+        <button class="secondary-button sortBtn" data-sort="selection">
+          Sort with Selection Sort
+        </button>
+        <button class="secondary-button sortBtn" data-sort="insertion">
+          Sort with Insertion Sort
+        </button>
+      </section>
+
+      <section class="sorted-array-section">
+        <h4>Sorted Array</h4>
+        <div class="modified-array"></div>
+      </section>
+
+      <div class="controlBtns">
+        <button class="secondary-button prevBtn">Prev</button>
+        <button class="secondary-button nextBtn">Next</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>Sorting Algorithm Visualizer</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
